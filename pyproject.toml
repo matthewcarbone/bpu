@@ -1,0 +1,54 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "accord"
+authors = [
+    {"name" = "Matthew R. Carbone", "email" = "mcarbone@bnl.gov"},
+]
+maintainers = [
+    {"name" = "Matthew R. Carbone", "email" = "mcarbone@bnl.gov"}
+]
+description = "tk"
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">=3.9"
+license = {"file" = "LICENSE"}
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+]
+dependencies = [
+    "dunamai==1.19.2",
+]
+
+[project.optional-dependencies]
+test = [
+    "codecov",
+    "coverage",
+    "flake8",
+    "pytest",
+    "pytest-cov",
+    "black",
+    "nbstripout",
+    "pre-commit",
+]
+build = [
+    "flit~=3.7",
+    "dunamai==1.19.2",
+]
+
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+docstring-code-line-length = 60
