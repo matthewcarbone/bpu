@@ -12,14 +12,14 @@ from ._version import __version__
 __version__ = "v0.0.1"
 ```
 
-You can use `accord.version` to replace this logic in the following way:
+You can use `bpu.version` to replace this logic in the following way:
 
 ```python
 # __init__.py
 from ._version import __version__
 
 # _version.py
-from accord.version import get_version
+from bpu.version import get_version
 
 __version__ = get_version()
 ```

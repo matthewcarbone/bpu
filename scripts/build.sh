@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROJECT="accord"
+PROJECT="bpu"
 
 bash scripts/install.sh build
 echo "__version__ = '$(dunamai from any --style=pep440 --no-metadata)'" >"${PROJECT}"/_version.py

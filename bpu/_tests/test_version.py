@@ -1,4 +1,4 @@
-from accord.version import get_version
+from bpu.version import get_version
 
 
 def test_get_version():
